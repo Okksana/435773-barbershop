@@ -1,0 +1,43 @@
+/*---------- 1.0 Text Settings ----------*/
+body {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
+  line-height: normal;
+
+/*Preview-color*/
+  background-color: #a9a9a9;
+
+  color: #f7f4f1;
+  }
+
+/* 1.1 h1, h2 */
+.page-title, 
+.news h2, 
+.gallery h2, 
+.contacts h2, 
+.appointment h2, 
+.modal-login h2 {
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+  }
+
+/* 1.2 h3 */
+.features h3 {
+  font-size: 30px;
+  line-height: 42px;
+  color: #f7f4f1;
+  }
+
+.catalog h3 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  }
+
+.product-info h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  }
