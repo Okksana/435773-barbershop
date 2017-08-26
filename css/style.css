@@ -41,3 +41,12 @@ body {
   line-height: 30px;
   color: #000000;
   }
+
+/*---------- 2.0 Visually hidden objects ----------*/
+/*.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  }*/
