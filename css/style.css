@@ -1,45 +1,379 @@
-/*---------- 1.0 Text Settings ----------*/
+/* 0.0 Fonts import
+--------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic");
+
+/* 1.0 Base Settings
+--------------------------------------------------*/
 body {
+  padding: 0;
+
   font-size: 14px;
   font-weight: bold;
-  font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
-  line-height: normal;
+  font-family: "PT Sans Narrow", "Arial Narrow", Arial, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
 
-/*Preview-color*/
-  background-color: #a9a9a9;
-
-  color: #f7f4f1;
+  background-color: #000000;
+  background-image: url("../img/background.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
   }
 
-/* 1.1 h1, h2 */
-.page-title, 
-.news h2, 
-.gallery h2, 
-.contacts h2, 
-.appointment h2, 
-.modal-login h2 {
+.inner-page {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/substrate-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  }
+
+/* Links */
+a {
+  text-decoration: none;
+  }
+
+/* Buttons */
+.button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #000000;
+  border: none;
+  }
+
+.button:hover, 
+.button:focus, 
+.button:active {
+  background-color: #663d15;
+  }
+
+/* Main navigation */
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #000000;
+  }
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+  }
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+  }
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+  }
+
+.site-navigation-current a {
+  border-bottom: 4px solid #ffffff;
+  }
+
+/* Features */
+.features-list {
+  list-style: none;
+  }
+
+.feature-item {
+  text-align: center;
+  }
+
+.feature-item h3 {
   font-size: 30px;
   line-height: 42px;
+  }
+
+/* Index Columns */
+.index-cols {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/substrate-light.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  }
+
+.index-cols h2 {
+  font-size: 30px;
+  line-height: 42px;
+  }
+
+/* News */
+.news-list {
+  list-style: none;
+  }
+
+.news-item time {
+  text-transform: none;
+  }
+
+/* Gallery */
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+  }
+
+/* Appointment */
+.appointment-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  }
+
+.appointment-item input:focus {
+  border-color: #663d15;
+  }
+
+/* Inner pages */
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+  }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  list-style: none;
+  }
+
+.breadcrumbs a {
   color: #000000;
   }
 
-/* 1.2 h3 */
-.features h3 {
-  font-size: 30px;
-  line-height: 42px;
-  color: #f7f4f1;
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
   }
 
-.catalog h3 {
+.breadcrumbs-current {
+  color: #aba9a7;
+  }
+
+/* Filters */
+.filter fieldset {
+  border: none;
+  }
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+  }
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+  }
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+  }
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+  }
+
+/* Catalog */
+.catalog-list {
+  list-style: none;
+  }
+
+.catalog-item {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+.catalog-item:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  }
+
+.catalog-item a {
+  color: #000000;
+  }
+
+.catalog-item h3 {
   font-size: 14px;
   line-height: 18px;
+  }
+
+.catalog-category {
+  text-transform: none;
+  }
+
+.catalog-item-price b {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: #e5e5e5;
+  }
+
+.catalog-item-price .button {
+  line-height: 20px;
+  color: #ffffff;
+  }
+
+/* Paginator */
+.paginator-list {
+  list-style: none;
+  }
+
+.paginator-item a {
+  color: #ffffff;
+
+  background-color: #000000;
+  }
+
+.paginator-list a:hover,
+.paginator-list a:focus,
+.paginator-list a:active {
+  background-color: #663d15;
+  }
+
+.paginator-item-current a,
+.paginator-item-current a:hover,
+.paginator-item-current a:focus,
+.paginator-item-current a:active {
   color: #000000;
+
+  background-color: #ffffff;
+  }
+
+/* Products */
+.product-photo-preview {
+  list-style: none;
+  }
+
+.product-photo-full, 
+.product-photo-preview li {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+.product-article {
+  text-align: right;
+  color: #aeaeae;
+  }
+
+.product-price b {
+  line-height: 20px;
+  text-align: center;
+
+  background-color: #e5e5e5;
   }
 
 .product-info h3 {
   font-size: 24px;
   line-height: 30px;
+  }
+
+.product-info ul {
+  list-style: none;
+  }
+
+/* Main footer */
+.main-footer {
+  color: #ffffff;
+
+  background-color: #212121;
+  background-image: url("../img/substrate-dark.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  }
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+  }
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+  }
+
+.footer-social {
+  text-align: center;
+  }
+
+.footer-social ul {
+  list-style: none;
+  }
+
+.social-button {
+  color: #ffffff;
+  }
+
+.footer-copyright {
+  text-align: center;
+  }
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
   color: #000000;
+  background-color: #ffffff;
+  }
+
+/* Modal */
+.modal {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/substrate-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
+  }
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+  }
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f9f6f3;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  }
+
+.login-form input:focus {
+  border-color: #663d15;
+  }
+
+.login-input:hover + label,
+.login-input:focus + label {
+  color: #663d15;
+  }
+
+.restore {
+  text-decoration: underline;
+  color: #000000;
+  }
+
+.restore:hover, 
+.restore:focus {
+  text-decoration: none;
   }
 
 /*---------- 2.0 Visually hidden objects ----------*/
